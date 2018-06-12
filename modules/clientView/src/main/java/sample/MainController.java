@@ -1,6 +1,7 @@
 package sample;
 
 import engine.OpenCvEngine;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -9,7 +10,6 @@ import javafx.scene.image.ImageView;
 import utils.Paths;
 import utils.Utils;
 
-import java.awt.event.ActionEvent;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
@@ -65,7 +65,7 @@ public class MainController {
     }
 
     @FXML
-    void haarSelected(ActionEvent event) {
+    public void haarSelected(ActionEvent event) {
         if (this.lbpClassifier.isSelected()) {
             this.lbpClassifier.setSelected(false);
         }
@@ -73,7 +73,7 @@ public class MainController {
     }
 
     @FXML
-    void lbpSelected(ActionEvent event) {
+    public void lbpSelected(ActionEvent event) {
         if (this.haarClassifier.isSelected()) {
             this.haarClassifier.setSelected(false);
         }

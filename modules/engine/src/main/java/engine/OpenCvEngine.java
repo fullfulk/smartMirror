@@ -42,6 +42,7 @@ public class OpenCvEngine {
     }
 
     public OpenCvEngine() {
+        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         this.capture = new VideoCapture();
         this.faceCascade = new CascadeClassifier();
         this.absoluteFaceSize = 0;
