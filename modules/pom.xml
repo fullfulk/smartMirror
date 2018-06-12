@@ -10,10 +10,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>modules</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>10</source>
+                    <target>10</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>pom</packaging>
     <modules>
         <module>engine</module>
-        <module>opencv</module>
         <module>clientView</module>
     </modules>
 
