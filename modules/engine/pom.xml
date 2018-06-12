@@ -10,6 +10,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>engine</artifactId>
-
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.openpnp</groupId>
+            <artifactId>opencv</artifactId>
+            <version>3.2.0-0</version>
+        </dependency>
+    </dependencies>
 </project>

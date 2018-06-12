@@ -8,8 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="clientView" />
         <module name="engine" />
-        <module name="opencv" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="opencv" target="1.5" />
+      <module name="openCv" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>engine</module>
-        <module>opencv</module>
         <module>clientView</module>
     </modules>
 
